@@ -1,5 +1,5 @@
 {
-    "name": "typicms/roles",
+    "name": "webfactorybulgaria/roles",
     "description": "",
     "license": "MIT",
     "authors": [
@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "typicms/core": "~2.8.0"
+        "typicms/core": "~4.1.0"
     },
     "autoload": {
         "psr-4": {
