@@ -32,7 +32,7 @@ class EloquentRole extends RepositoriesAbstract implements RoleInterface
      *
      * @return mixed Model or false on error during save
      */
-    public function create(array $data)
+    public function create(array $data,  array $syncTables = [])
     {
         $roleData = array_except($data, ['exit', 'permissions']);
 
@@ -55,7 +55,7 @@ class EloquentRole extends RepositoriesAbstract implements RoleInterface
      *
      * @return bool
      */
-    public function update(array $data)
+    public function update(array $data,  array $syncTables = [])
     {
         $role = $this->model->find($data['id']);
 
