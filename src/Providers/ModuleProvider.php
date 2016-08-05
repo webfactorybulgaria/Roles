@@ -5,8 +5,8 @@ namespace TypiCMS\Modules\Roles\Providers;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use TypiCMS\Modules\Roles\Models\Role;
-use TypiCMS\Modules\Roles\Repositories\EloquentRole;
+use TypiCMS\Modules\Roles\Custom\Models\Role;
+use TypiCMS\Modules\Roles\Custom\Repositories\EloquentRole;
 
 class ModuleProvider extends ServiceProvider
 {
@@ -31,7 +31,7 @@ class ModuleProvider extends ServiceProvider
 
         AliasLoader::getInstance()->alias(
             'Roles',
-            \TypiCMS\Modules\Roles\Facades\Facade::class
+            \TypiCMS\Modules\Roles\Custom\Facades\Facade::class
         );
     }
 
@@ -42,15 +42,15 @@ class ModuleProvider extends ServiceProvider
         /*
          * Register route service provider
          */
-        $app->register(\TypiCMS\Modules\Roles\Providers\RouteServiceProvider::class);
+        $app->register(\TypiCMS\Modules\Roles\Custom\Providers\RouteServiceProvider::class);
         $app->register(\Spatie\Permission\PermissionServiceProvider::class);
 
         /*
          * Sidebar view composer
          */
-        $app->view->composer('core::admin._sidebar', \TypiCMS\Modules\Roles\Composers\SidebarViewComposer::class);
+        $app->view->composer('core::admin._sidebar', \TypiCMS\Modules\Roles\Custom\Composers\SidebarViewComposer::class);
 
-        $app->bind(\TypiCMS\Modules\Roles\Repositories\RoleInterface::class, function (Application $app) {
+        $app->bind(\TypiCMS\Modules\Roles\Custom\Repositories\RoleInterface::class, function (Application $app) {
             return new EloquentRole(new Role());
         });
     }
