@@ -1,6 +1,6 @@
 <?php
 
-namespace TypiCMS\Modules\Roles\Custom\Presenters;
+namespace TypiCMS\Modules\Roles\Shells\Presenters;
 
 use TypiCMS\Modules\Roles\Presenters\ModulePresenter as Base;
 

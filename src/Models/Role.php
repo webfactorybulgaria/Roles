@@ -8,8 +8,8 @@ use Spatie\Permission\Contracts\Role as RoleContract;
 use Spatie\Permission\Exceptions\RoleDoesNotExist;
 use Spatie\Permission\Traits\HasPermissions;
 use Spatie\Permission\Traits\RefreshesPermissionCache;
-use TypiCMS\Modules\Core\Custom\Models\Base;
-use TypiCMS\Modules\History\Custom\Traits\Historable;
+use TypiCMS\Modules\Core\Shells\Models\Base;
+use TypiCMS\Modules\History\Shells\Traits\Historable;
 
 class Role extends Base implements RoleContract
 {
@@ -18,7 +18,7 @@ class Role extends Base implements RoleContract
     use PresentableTrait;
     use RefreshesPermissionCache;
 
-    protected $presenter = 'TypiCMS\Modules\Roles\Custom\Presenters\ModulePresenter';
+    protected $presenter = 'TypiCMS\Modules\Roles\Shells\Presenters\ModulePresenter';
 
     public $guarded = ['id'];
 

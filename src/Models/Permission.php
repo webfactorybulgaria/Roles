@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\Permission\Contracts\Permission as PermissionContract;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 use Spatie\Permission\Traits\RefreshesPermissionCache;
-use TypiCMS\Modules\Core\Custom\Models\Base;
+use TypiCMS\Modules\Core\Shells\Models\Base;
 
 class Permission extends Base implements PermissionContract
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace TypiCMS\Modules\Roles\Custom\Models;
+namespace TypiCMS\Modules\Roles\Shells\Models;
 
 use TypiCMS\Modules\Roles\Models\Permission as Base;
 

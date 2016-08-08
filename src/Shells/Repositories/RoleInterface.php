@@ -1,6 +1,6 @@
 <?php
 
-namespace TypiCMS\Modules\Roles\Custom\Repositories;
+namespace TypiCMS\Modules\Roles\Shells\Repositories;
 
 use TypiCMS\Modules\Roles\Repositories\RoleInterface as Base;
 

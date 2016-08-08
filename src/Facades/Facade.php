@@ -13,6 +13,6 @@ class Facade extends MainFacade
      */
     protected static function getFacadeAccessor()
     {
-        return 'TypiCMS\Modules\Roles\Custom\Repositories\EloquentRole';
+        return 'TypiCMS\Modules\Roles\Shells\Repositories\EloquentRole';
     }
 }
