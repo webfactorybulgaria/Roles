@@ -2,9 +2,9 @@
 
 namespace TypiCMS\Modules\Roles\Shells\Models;
 
-use TypiCMS\Modules\Roles\Models\Permission as Base;
+use TypiCMS\Modules\Roles\Models\Permission as BaseClass;
 
-class Permission extends Base
+class Permission extends BaseClass
 {
 
 }

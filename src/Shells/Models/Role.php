@@ -2,9 +2,9 @@
 
 namespace TypiCMS\Modules\Roles\Shells\Models;
 
-use TypiCMS\Modules\Roles\Models\Role as Base;
+use TypiCMS\Modules\Roles\Models\Role as BaseClass;
 
-class Role extends Base
+class Role extends BaseClass
 {
 
 }

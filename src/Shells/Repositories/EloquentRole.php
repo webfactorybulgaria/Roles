@@ -2,9 +2,9 @@
 
 namespace TypiCMS\Modules\Roles\Shells\Repositories;
 
-use TypiCMS\Modules\Roles\Repositories\EloquentRole as Base;
+use TypiCMS\Modules\Roles\Repositories\EloquentRole as BaseClass;
 
-class EloquentRole extends Base implements RoleInterface
+class EloquentRole extends BaseClass implements RoleInterface
 {
 
 }
