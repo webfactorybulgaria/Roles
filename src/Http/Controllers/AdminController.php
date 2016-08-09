@@ -2,10 +2,10 @@
 
 namespace TypiCMS\Modules\Roles\Http\Controllers;
 
-use TypiCMS\Modules\Core\Http\Controllers\BaseAdminController;
-use TypiCMS\Modules\Roles\Http\Requests\FormRequest;
-use TypiCMS\Modules\Roles\Models\Role;
-use TypiCMS\Modules\Roles\Repositories\RoleInterface;
+use TypiCMS\Modules\Core\Shells\Http\Controllers\BaseAdminController;
+use TypiCMS\Modules\Roles\Shells\Http\Requests\FormRequest;
+use TypiCMS\Modules\Roles\Shells\Models\Role;
+use TypiCMS\Modules\Roles\Shells\Repositories\RoleInterface;
 
 class AdminController extends BaseAdminController
 {
@@ -60,7 +60,7 @@ class AdminController extends BaseAdminController
     /**
      * Store a newly created resource in storage.
      *
-     * @param \TypiCMS\Modules\Roles\Http\Requests\FormRequest $request
+     * @param \TypiCMS\Modules\Roles\Shells\Http\Requests\FormRequest $request
      *
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -74,8 +74,8 @@ class AdminController extends BaseAdminController
     /**
      * Update the specified resource in storage.
      *
-     * @param \TypiCMS\Modules\Roles\Models\Role               $role
-     * @param \TypiCMS\Modules\Roles\Http\Requests\FormRequest $request
+     * @param \TypiCMS\Modules\Roles\Shells\Models\Role               $role
+     * @param \TypiCMS\Modules\Roles\Shells\Http\Requests\FormRequest $request
      *
      * @return \Illuminate\Http\RedirectResponse
      */

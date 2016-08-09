@@ -3,9 +3,9 @@
 namespace TypiCMS\Modules\Roles\Http\Controllers;
 
 use Illuminate\Support\Facades\Request;
-use TypiCMS\Modules\Core\Http\Controllers\BaseApiController;
-use TypiCMS\Modules\Roles\Models\Role;
-use TypiCMS\Modules\Roles\Repositories\RoleInterface as Repository;
+use TypiCMS\Modules\Core\Shells\Http\Controllers\BaseApiController;
+use TypiCMS\Modules\Roles\Shells\Models\Role;
+use TypiCMS\Modules\Roles\Shells\Repositories\RoleInterface as Repository;
 
 class ApiController extends BaseApiController
 {
@@ -49,7 +49,7 @@ class ApiController extends BaseApiController
     /**
      * Remove the specified resource from storage.
      *
-     * @param \TypiCMS\Modules\Roles\Models\Role $role
+     * @param \TypiCMS\Modules\Roles\Shells\Models\Role $role
      *
      * @return \Illuminate\Http\JsonResponse
      */

@@ -2,8 +2,8 @@
 
 namespace TypiCMS\Modules\Roles\Repositories;
 
-use TypiCMS\Modules\Core\Repositories\RepositoriesAbstract;
-use TypiCMS\Modules\Roles\Models\Role;
+use TypiCMS\Modules\Core\Shells\Repositories\RepositoriesAbstract;
+use TypiCMS\Modules\Roles\Shells\Models\Role;
 
 class EloquentRole extends RepositoriesAbstract implements RoleInterface
 {
